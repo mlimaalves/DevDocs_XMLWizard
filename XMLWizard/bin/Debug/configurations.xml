@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<configurations>
+	<service>
+		<servicename></servicename>
+		<displayname></displayname>
+		<servicedescription></servicedescription>
+	</service>
+	<projects>
+		<project nId='1' type='tfvc'>
+			<title>My Company Project</title>
+			<language>en-us</language>
+			<extension>.sql</extension>
+			<programminglanguage>sql</programminglanguage>
+			<deletefiles>false</deletefiles>
+			<localfolder>C:\Projects\My Project</localfolder>
+			<html>
+				<htmlfolder>C:\Projects\</htmlfolder>
+			</html>
+			<tfvc>
+				<name>$/MySQLProject</name>
+				<history>true</history>
+				<serverurl>https://mycompany.visualstudio.com</serverurl>
+				<networkcredential>
+					<username>themrl_15@hotmail.com</username>
+					<password>Xcvxcv@330722</password>
+				</networkcredential>
+			</tfvc>
+		</project>
+		<project nId='2' type=''>
+			<title></title>
+			<language></language>
+			<extension></extension>
+			<programminglanguage></programminglanguage>
+			<deletefiles></deletefiles>
+			<localfolder></localfolder>
+			<html>
+				<htmlfolder></htmlfolder>
+			</html>
+		</project>
+		<project nId='3' type=''>
+			<title></title>
+			<language></language>
+			<extension></extension>
+			<programminglanguage></programminglanguage>
+			<deletefiles></deletefiles>
+			<localfolder></localfolder>
+			<html>
+				<htmlfolder></htmlfolder>
+			</html>
+		</project>
+		<project nId='4' type=''>
+			<title></title>
+			<language></language>
+			<extension></extension>
+			<programminglanguage></programminglanguage>
+			<deletefiles></deletefiles>
+			<localfolder></localfolder>
+			<html>
+				<htmlfolder></htmlfolder>
+			</html>
+		</project>
+		<project nId='5' type=''>
+			<title></title>
+			<language></language>
+			<extension></extension>
+			<programminglanguage></programminglanguage>
+			<deletefiles></deletefiles>
+			<localfolder></localfolder>
+			<html>
+				<htmlfolder></htmlfolder>
+			</html>
+		</project>
+	</projects>
+</configurations>

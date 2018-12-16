@@ -1,0 +1,16 @@
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Release\XMLWizard.exe.config
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Release\XMLWizard.exe
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Release\XMLWizard.pdb
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Release\Microsoft.WindowsAPICodePack.dll
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\MainWindow.g.cs
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\App.g.cs
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard_MarkupCompile.cache
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard_MarkupCompile.lref
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\MainWindow.baml
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.g.resources
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.Properties.Resources.resources
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.csproj.GenerateResource.Cache
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.exe
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.pdb
+C:\Users\mlima\Documents\Visual Studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.csprojResolveAssemblyReference.cache

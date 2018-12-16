@@ -1,0 +1,334 @@
+﻿<Window x:Class="XMLWizard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XMLWizard"
+        mc:Ignorable="d"
+        Title="XML Wizard" Height="600" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition />
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <TabControl
+            Grid.Row="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="3">
+            <TabItem Name="tab1"
+                     TabIndex="0"
+                     Header="Project Configuration">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="10"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Tag="Project ID" 
+                               LastChildFill="True" Grid.Row="0" Grid.Column="1" Margin="0,5,0,20">
+                        <Label Name="lblProjectID"
+                               Content="Project ID"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <ComboBox Name="cboProjectID"
+                                  SelectedValue="{Binding projectid, Mode=TwoWay}"
+                                  DropDownOpened="cboProjectID_DropDownOpened"
+                                  DropDownClosed="cboProjectID_DropDownClosed">
+                            <ComboBoxItem Tag="0" Content="Project ID 1"/>
+                            <ComboBoxItem Tag="1" Content="Project ID 2"/>
+                            <ComboBoxItem Tag="2" Content="Project ID 3"/>
+                            <ComboBoxItem Tag="3" Content="Project ID 4"/>
+                            <ComboBoxItem Tag="4" Content="Project ID 5"/>
+                        </ComboBox>
+                    </DockPanel>
+
+                    <DockPanel Tag="Project Type" 
+                               LastChildFill="True" Grid.Row="1" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblProjectType"
+                               Content="Project Type"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <ComboBox Name="cboProjectType"
+                                  SelectedValue="{Binding type, Mode=TwoWay}"
+                                  DropDownClosed="cboProjectType_DropDownClosed">
+                            <ComboBoxItem Tag="local" Uid="" Content="Non-versioned / Local Workspace"/>
+                            <ComboBoxItem Tag="tfvc"  Content="TFVC (Team Foundation Version Control)"/>
+                        </ComboBox>
+                    </DockPanel>
+
+                    <DockPanel Tag="Custom Title" 
+                               LastChildFill="True" Grid.Row="2" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblCustomTitle"
+                               Content="Custom Title"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <TextBox Name="txtCustomTitle"
+                                 Text="{Binding Path=title, Mode=TwoWay}"/>
+                    </DockPanel>
+
+                    <DockPanel Tag="Project Language" 
+                               LastChildFill="True" Grid.Row="3" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblProjectLanguage"
+                               Content="Project Language"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <ComboBox Name="cboProjectLanguage"
+                                  SelectedValue="{Binding language, Mode=TwoWay}">
+                            <ComboBoxItem Tag="bn-BD" Content="bn-BD (Bangla, Bangladesh)"/>
+                            <ComboBoxItem Tag="bn-IN" Content="bn-IN (Bangla, India)"/>
+                            <ComboBoxItem Tag="zh-CN" Content="zh-CN (Standard Chinese)"/>
+                            <ComboBoxItem Tag="zh-TW" Content="zh-TW (Chinese, Taiwan)"/>
+                            <ComboBoxItem Tag="zh-HK" Content="zh-HK (Chinese, Hong Kong)"/>
+                            <ComboBoxItem Tag="nl-BE" Content="nl-BE (Dutch, Belgia)"/>
+                            <ComboBoxItem Tag="nl-NL" Content="nl-NL (Dutch, Netherlands)"/>
+                            <ComboBoxItem Tag="en-GB" Content="en-GB (British English)"/>
+                            <ComboBoxItem Tag="en-US" Content="en-US (American English)"/>
+                            <ComboBoxItem Tag="en-CA" Content="en-CA (Canadian English)"/>
+                            <ComboBoxItem Tag="en-IN" Content="en-IN (Indian English)"/>
+                            <ComboBoxItem Tag="en-AU" Content="en-AU (Australian English)"/>
+                            <ComboBoxItem Tag="en-NZ" Content="en-NZ (New Zealand English)"/>
+                            <ComboBoxItem Tag="fr-BE" Content="fr-BE (Belgian French)"/>
+                            <ComboBoxItem Tag="fr-CH" Content="fr-CH (Swiss French)"/>
+                            <ComboBoxItem Tag="fr-FR" Content="fr-FR (Standard French)"/>
+                            <ComboBoxItem Tag="fr-CA" Content="fr-CA (Canadian French)"/>
+                            <ComboBoxItem Tag="de-AT" Content="de-AT (Austrian German)"/>
+                            <ComboBoxItem Tag="de-DE" Content="de-DE (Standard German)"/>
+                            <ComboBoxItem Tag="de-CH" Content="de-CH (Swiss German)"/>
+                            <ComboBoxItem Tag="it-CH" Content="it-CH (Swiss Italian)"/>
+                            <ComboBoxItem Tag="it-IT" Content="it-IT (Standard Italian)"/>
+                            <ComboBoxItem Tag="pt-PT" Content="pt-PT (European Portuguese)"/>
+                            <ComboBoxItem Tag="pt-BR" Content="pt-BR (Brazilian Portuguese)"/>
+                            <ComboBoxItem Tag="es-ES" Content="es-ES (Castilian Spanish)"/>
+                            <ComboBoxItem Tag="es-MX" Content="es-MX (Mexican Spanish)"/>
+                            <ComboBoxItem Tag="es-AR" Content="es-AR (Argentine Spanish)"/>
+                            <ComboBoxItem Tag="es-CO" Content="es-CO (Colombian Spanish)"/>
+                            <ComboBoxItem Tag="es-CL" Content="es-CL (Chilean Spanish)"/>
+                            <ComboBoxItem Tag="es-US" Content="es-US (American Spanish)"/>
+                            <ComboBoxItem Tag="ta-IN" Content="ta-IN (Indian Tamil)"/>
+                            <ComboBoxItem Tag="ta-LK" Content="ta-LK (Sri Lankan Tamil)"/>
+                        </ComboBox>
+                    </DockPanel>
+
+                    <DockPanel Tag="File Extension" 
+                               LastChildFill="True" Grid.Row="4" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblFileExtension"
+                               Content="File Extension"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <TextBox Name="txtFileExtension"
+                                 Text="{Binding Path=extension, Mode=TwoWay}"/>
+                    </DockPanel>
+
+                    <DockPanel Tag="Programming Language" 
+                               LastChildFill="True" Grid.Row="5" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblProgrammingLanguage"
+                               Content="Programming Language"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <TextBox Name="txtProgrammingLanguage"
+                                 Text="{Binding Path=programminglanguage, Mode=TwoWay}"/>
+                    </DockPanel>
+
+                    <DockPanel Tag="Delete Files?" 
+                               LastChildFill="True" Grid.Row="6" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblDeleteFiles"
+                               Content="Delete Older Files?"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <ComboBox Name="cboDeleteFiles"
+                                  SelectedValue="{Binding deletefiles, Mode=TwoWay}">
+                            <ComboBoxItem Tag="true" Content="True"/>
+                            <ComboBoxItem Tag="false" Content="False"/>
+                        </ComboBox>
+                    </DockPanel>
+
+                    <DockPanel Tag="Code Folder (Origin)"
+                               LastChildFill="True" Grid.Row="7" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblCodeFolder"
+                               Content="Code Folder (Origin)"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <TextBox Name="txtCodeFolder"
+                                 IsEnabled="False"
+                                 Text="{Binding Path=localfolder, Mode=TwoWay}"/>
+                    </DockPanel>
+                    <Button Name="btnCodeFolder"
+                            Width="50"
+                            Margin="0,5,0,0"
+                            Content="..."
+                            Grid.Row="7"
+                            Grid.Column="1"
+                            HorizontalAlignment="Right" 
+                            Click="Folderpick"/>
+                    <DockPanel Tag="HTML Folder (Destination)"
+                               LastChildFill="True" Grid.Row="8" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblHTMLFolder"
+                               Content="HTML Folder (Destination)"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <TextBox Name="txtHTMLFolder"
+                                 IsEnabled="False"
+                                 Text="{Binding Path=htmlfolder, Mode=TwoWay}"/>
+                    </DockPanel>
+                    <Button Name="btnHTMLFolder"
+                            Margin="0,5,0,0"
+                            Width="50"
+                            Content="..."
+                            Grid.Row="8"
+                            Grid.Column="1"
+                            HorizontalAlignment="Right"
+                            Click="Folderpick"/>
+                    
+                    <GroupBox Name="grpTFS" 
+                              Tag="TFS Options"
+                              Header="For TFS Projects Only:"
+                              Grid.Row="9"
+                              Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <DockPanel Tag="Project Name"
+                                       LastChildFill="True" Grid.Row="0" Margin="0,5,0,0">
+                                <Label Name="lblProjectName"
+                                       Content="Project Name"
+                                       DockPanel.Dock="Left"
+                                       Width="144"/>
+                                <TextBox Name="txtProjectName"
+                                         Text="{Binding Path=name, Mode=TwoWay}"/>
+                            </DockPanel>
+
+                            <DockPanel Tag="Show History Tab?"
+                                       LastChildFill="True" Grid.Row="1" Margin="0,5,0,0">
+                                <Label Name="lblShowHistory"
+                                       Content="Show History Tab?"
+                                       DockPanel.Dock="Left"
+                                       Width="144"/>
+                                <ComboBox Name="cboShowHistory"
+                                          SelectedValue="{Binding history, Mode=TwoWay}">
+                                    <ComboBoxItem Tag="true" Content="True"/>
+                                    <ComboBoxItem Tag="false" Content="False"/>
+                                </ComboBox>
+                            </DockPanel>
+
+                            <DockPanel Tag="TFS Server URL"
+                                       LastChildFill="True" Grid.Row="2" Margin="0,5,0,0">
+                                <Label Name="lblServerURL"
+                                       Content="TFS Server URL"
+                                       DockPanel.Dock="Left"
+                                       Width="144"/>
+                                <TextBox Name="txtServerURL"
+                                         Text="{Binding Path=serverurl, Mode=TwoWay}"/>
+                            </DockPanel>
+                            
+                            <DockPanel Tag="Connection Username"
+                                       LastChildFill="True" Grid.Row="3" Margin="0,5,0,0">
+                                <Label Name="lblUsername"
+                                       Content="Connection Username"
+                                       DockPanel.Dock="Left"
+                                       Width="144"/>
+                                <TextBox Name="txtUsername"
+                                         Text="{Binding Path=username, Mode=TwoWay}"/>
+                            </DockPanel>
+
+                            <DockPanel Tag="Connection Password"
+                                       LastChildFill="True" Grid.Row="4" Margin="0,5,0,0">
+                                <Label Name="lblPassword"
+                                       Content="Connection Password"
+                                       DockPanel.Dock="Left"
+                                       Width="144"/>
+                                <PasswordBox Name="txtPassword"/>
+                            </DockPanel>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+
+            <TabItem Name="tab2"
+                     TabIndex="1"
+                     Header="Windows Service (Not Mandatory)">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="10"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <DockPanel Tag="Service Name" 
+                               LastChildFill="True" Grid.Row="0" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblServiceName"
+                               Content="Service Name"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <TextBox Name="txtServiceName" 
+                                 Text="{Binding Path=servicename, Mode=TwoWay}"/>
+                    </DockPanel>
+
+                    <DockPanel Tag="Display Name" 
+                               LastChildFill="True" Grid.Row="1" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblDisplayName"
+                               Content="Display Name"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <TextBox Name="txtDisplayName" 
+                                 Text="{Binding Path=displayname, Mode=TwoWay}"/>
+                    </DockPanel>
+
+                    <DockPanel Tag="Service Description"
+                               LastChildFill="True" Grid.Row="2" Grid.Column="1" Margin="0,5,0,0">
+                        <Label Name="lblServiceDescription"
+                               Content="Service Description"
+                               DockPanel.Dock="Left"
+                               Width="150"/>
+                        <TextBox Name="txtServiceDescription"
+                                 Text="{Binding Path=servicedescription, Mode=TwoWay}"/>
+                    </DockPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Name="btnCancel"
+                Margin="0,5,0,0"
+                Grid.Row="2"
+                Grid.Column="1"
+                Height="20"
+                Content="Cancel"
+                Click="btnCancel_Click"/>
+        <Button Name="btnSave"
+                Margin="0,5,0,0"
+                Grid.Row="2"
+                Grid.Column="3"
+                Height="20"
+                Content="Save"
+                Click="btnSave_Click"/>
+    </Grid>
+</Window>

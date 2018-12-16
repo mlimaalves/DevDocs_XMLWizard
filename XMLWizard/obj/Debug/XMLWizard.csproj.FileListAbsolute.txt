@@ -1,0 +1,15 @@
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Debug\XMLWizard.exe.config
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Debug\XMLWizard.exe
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Debug\XMLWizard.pdb
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\MainWindow.g.cs
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\App.g.cs
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\XMLWizard_MarkupCompile.cache
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\XMLWizard_MarkupCompile.lref
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\MainWindow.baml
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\XMLWizard.g.resources
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\XMLWizard.Properties.Resources.resources
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\XMLWizard.csproj.GenerateResource.Cache
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\XMLWizard.exe
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Debug\XMLWizard.pdb
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Debug\Microsoft.WindowsAPICodePack.dll
+c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
