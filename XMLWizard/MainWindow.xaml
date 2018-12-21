@@ -47,6 +47,7 @@
                     </Grid.RowDefinitions>
 
                     <DockPanel Tag="Project ID" 
+                               ToolTip="Project attribute. nId goes from 1 to 5 (one nId for each project)"
                                LastChildFill="True" Grid.Row="0" Grid.Column="1" Margin="0,5,0,20">
                         <Label Name="lblProjectID"
                                Content="Project ID"
@@ -66,6 +67,13 @@
 
                     <DockPanel Tag="Project Type" 
                                LastChildFill="True" Grid.Row="1" Grid.Column="1" Margin="0,5,0,0">
+                        <DockPanel.ToolTip>
+                            <TextBlock>
+Project type. Must be one of the following options:
+<LineBreak/>. local (when the project files are stored in a local/network drive;
+<LineBreak/>. tfvc (Team Foundation Version Control) project;
+                            </TextBlock>
+                        </DockPanel.ToolTip>
                         <Label Name="lblProjectType"
                                Content="Project Type"
                                DockPanel.Dock="Left"
@@ -79,6 +87,7 @@
                     </DockPanel>
 
                     <DockPanel Tag="Custom Title" 
+                               ToolTip="Project title. Any string can be placed here"
                                LastChildFill="True" Grid.Row="2" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblCustomTitle"
                                Content="Custom Title"
@@ -88,7 +97,8 @@
                                  Text="{Binding Path=title, Mode=TwoWay}"/>
                     </DockPanel>
 
-                    <DockPanel Tag="Project Language" 
+                    <DockPanel Tag="Project Language"
+                               ToolTip="Project language, following the ISO 639-1 Standard Language Codes"
                                LastChildFill="True" Grid.Row="3" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblProjectLanguage"
                                Content="Project Language"
@@ -131,7 +141,8 @@
                         </ComboBox>
                     </DockPanel>
 
-                    <DockPanel Tag="File Extension" 
+                    <DockPanel Tag="File Extension"
+                               ToolTip="File extension that will be used for the project documentation. Must contain a dot character"
                                LastChildFill="True" Grid.Row="4" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblFileExtension"
                                Content="File Extension"
@@ -142,6 +153,7 @@
                     </DockPanel>
 
                     <DockPanel Tag="Programming Language" 
+                               ToolTip="Programming Language that will be used for the project documentation. Any string can be placed here"
                                LastChildFill="True" Grid.Row="5" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblProgrammingLanguage"
                                Content="Programming Language"
@@ -153,6 +165,13 @@
 
                     <DockPanel Tag="Delete Files?" 
                                LastChildFill="True" Grid.Row="6" Grid.Column="1" Margin="0,5,0,0">
+                        <DockPanel.ToolTip>
+                            <TextBlock>
+Indicates if the 'htmlfolder' files must be deleted during each execution:
+<LineBreak/>. true (deletes every file to always recreate the documentation);
+<LineBreak/>. false (deletes only the out of date documentation files according to the SHA-1 key stored in the HTML meta Tag"	
+                            </TextBlock>
+                        </DockPanel.ToolTip>
                         <Label Name="lblDeleteFiles"
                                Content="Delete Older Files?"
                                DockPanel.Dock="Left"
@@ -165,6 +184,7 @@
                     </DockPanel>
 
                     <DockPanel Tag="Code Folder (Origin)"
+                               ToolTip="full directory of where the source-code files are"
                                LastChildFill="True" Grid.Row="7" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblCodeFolder"
                                Content="Code Folder (Origin)"
@@ -175,6 +195,7 @@
                                  Text="{Binding Path=localfolder, Mode=TwoWay}"/>
                     </DockPanel>
                     <Button Name="btnCodeFolder"
+                            ToolTip="full directory of where the source-code files are"
                             Width="50"
                             Margin="0,5,0,0"
                             Content="..."
@@ -183,6 +204,7 @@
                             HorizontalAlignment="Right" 
                             Click="Folderpick"/>
                     <DockPanel Tag="HTML Folder (Destination)"
+                               ToolTip="full directory of where the html documentation files must be placed"
                                LastChildFill="True" Grid.Row="8" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblHTMLFolder"
                                Content="HTML Folder (Destination)"
@@ -193,6 +215,7 @@
                                  Text="{Binding Path=htmlfolder, Mode=TwoWay}"/>
                     </DockPanel>
                     <Button Name="btnHTMLFolder"
+                            ToolTip="full directory of where the html documentation files must be placed"
                             Margin="0,5,0,0"
                             Width="50"
                             Content="..."
@@ -200,7 +223,7 @@
                             Grid.Column="1"
                             HorizontalAlignment="Right"
                             Click="Folderpick"/>
-                    
+
                     <GroupBox Name="grpTFS" 
                               Tag="TFS Options"
                               Header="For TFS Projects Only:"
@@ -215,6 +238,7 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
                             <DockPanel Tag="Project Name"
+                                       ToolTip="TFS Project name. Do not add $/ in the beginning of the string"
                                        LastChildFill="True" Grid.Row="0" Margin="0,5,0,0">
                                 <Label Name="lblProjectName"
                                        Content="Project Name"
@@ -226,6 +250,13 @@
 
                             <DockPanel Tag="Show History Tab?"
                                        LastChildFill="True" Grid.Row="1" Margin="0,5,0,0">
+                                <DockPanel.ToolTip>
+                                    <TextBlock>
+Indicates if the Team Foundation Version Control Changesets must be downloaded and placed in the documentation:
+<LineBreak/>. true (download the entire changeset history of the file);
+<LineBreak/>. false (does not download and hides the History Tab);
+                                    </TextBlock>
+                                </DockPanel.ToolTip>
                                 <Label Name="lblShowHistory"
                                        Content="Show History Tab?"
                                        DockPanel.Dock="Left"
@@ -238,6 +269,7 @@
                             </DockPanel>
 
                             <DockPanel Tag="TFS Server URL"
+                                       ToolTip="TFS Project URL"
                                        LastChildFill="True" Grid.Row="2" Margin="0,5,0,0">
                                 <Label Name="lblServerURL"
                                        Content="TFS Server URL"
@@ -246,8 +278,9 @@
                                 <TextBox Name="txtServerURL"
                                          Text="{Binding Path=serverurl, Mode=TwoWay}"/>
                             </DockPanel>
-                            
+
                             <DockPanel Tag="Connection Username"
+                                       ToolTip="A valid TFS Member that has access to your project defined in the 'name' Tag"
                                        LastChildFill="True" Grid.Row="3" Margin="0,5,0,0">
                                 <Label Name="lblUsername"
                                        Content="Connection Username"
@@ -257,14 +290,6 @@
                                          Text="{Binding Path=username, Mode=TwoWay}"/>
                             </DockPanel>
 
-                            <DockPanel Tag="Connection Password"
-                                       LastChildFill="True" Grid.Row="4" Margin="0,5,0,0">
-                                <Label Name="lblPassword"
-                                       Content="Connection Password"
-                                       DockPanel.Dock="Left"
-                                       Width="144"/>
-                                <PasswordBox Name="txtPassword"/>
-                            </DockPanel>
                         </Grid>
                     </GroupBox>
                 </Grid>
@@ -284,7 +309,8 @@
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
-                    <DockPanel Tag="Service Name" 
+                    <DockPanel Tag="Service Name"
+                               ToolTip="Windows Service name"
                                LastChildFill="True" Grid.Row="0" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblServiceName"
                                Content="Service Name"
@@ -294,7 +320,8 @@
                                  Text="{Binding Path=servicename, Mode=TwoWay}"/>
                     </DockPanel>
 
-                    <DockPanel Tag="Display Name" 
+                    <DockPanel Tag="Display Name"
+                               ToolTip="Windows Service display name"
                                LastChildFill="True" Grid.Row="1" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblDisplayName"
                                Content="Display Name"
@@ -305,6 +332,7 @@
                     </DockPanel>
 
                     <DockPanel Tag="Service Description"
+                               ToolTip="Windows Service description"
                                LastChildFill="True" Grid.Row="2" Grid.Column="1" Margin="0,5,0,0">
                         <Label Name="lblServiceDescription"
                                Content="Service Description"

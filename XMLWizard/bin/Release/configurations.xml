@@ -1,72 +1,73 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
 <configurations>
 	<service>
-		<servicename>_Console_WSA</servicename>
-		<displayname>_Console_WSA</displayname>
-		<servicedescription>_Console_WSA_Description</servicedescription>
+		<servicename></servicename>
+		<displayname></displayname>
+		<servicedescription></servicedescription>
 	</service>
 	<projects>
-		<projects nId='1' type='tfvc'>
-			<title></title>
-			<language>pt-br</language>
-			<extension>.prw</extension>
-			<deletefiles>true</deletefiles>
-			<localfolder>C:\TFS\TFS - Fareva LOU IT</localfolder>
-			<callindex>true</callindex>
+		<project nId='1' type='tfvc'>
+			<title>My Company Project</title>
+			<language>en-us</language>
+			<extension>.sql</extension>
+			<programminglanguage>sql</programminglanguage>
+			<deletefiles>false</deletefiles>
+			<localfolder>C:\Projects\My Project</localfolder>
 			<html>
-				<htmlfolder>C:\TFS\</htmlfolder>
+				<htmlfolder>C:\Projects\</htmlfolder>
 			</html>
-			<name>TFS - Fareva LOU IT</name>
-			<changesets>true</changesets>
-			<serverurl>https://brloutfs.visualstudio.com/</serverurl>
-			<networkcredential>
-				<username>brloutfs.louveira@fareva.com</username>
-				<password>Fareva01</password>
-			</networkcredential>
-		</projects>
-		<projects nId='2' type='local'>
-			<title></title>
-			<language>pt-br</language>
-			<extension>.prw</extension>
-			<deletefiles>true</deletefiles>
-			<localfolder>C:\TFS\tfs v2</localfolder>
-			<callindex>false</callindex>
-			<html>
-				<htmlfolder>C:\TFS\</htmlfolder>
-			</html>
-		</projects>
-		<projects nId='3' type=''>
+			<tfvc>
+				<name>$/MySQLProject</name>
+				<history>true</history>
+				<serverurl>https://mycompany.visualstudio.com</serverurl>
+				<networkcredential>
+					<username>mytfsproject@outlook.com</username>
+				</networkcredential>
+			</tfvc>
+		</project>
+		<project nId='2' type=''>
 			<title></title>
 			<language></language>
 			<extension></extension>
+			<programminglanguage></programminglanguage>
 			<deletefiles></deletefiles>
 			<localfolder></localfolder>
-			<callindex></callindex>
 			<html>
 				<htmlfolder></htmlfolder>
 			</html>
-		</projects>
-		<projects nId='4' type=''>
+		</project>
+		<project nId='3' type=''>
 			<title></title>
 			<language></language>
 			<extension></extension>
+			<programminglanguage></programminglanguage>
 			<deletefiles></deletefiles>
 			<localfolder></localfolder>
-			<callindex></callindex>
 			<html>
 				<htmlfolder></htmlfolder>
 			</html>
-		</projects>
-		<projects nId='5' type=''>
+		</project>
+		<project nId='4' type=''>
 			<title></title>
 			<language></language>
 			<extension></extension>
+			<programminglanguage></programminglanguage>
 			<deletefiles></deletefiles>
 			<localfolder></localfolder>
-			<callindex></callindex>
 			<html>
 				<htmlfolder></htmlfolder>
 			</html>
-		</projects>
+		</project>
+		<project nId='5' type=''>
+			<title></title>
+			<language></language>
+			<extension></extension>
+			<programminglanguage></programminglanguage>
+			<deletefiles></deletefiles>
+			<localfolder></localfolder>
+			<html>
+				<htmlfolder></htmlfolder>
+			</html>
+		</project>
 	</projects>
 </configurations>

@@ -30,7 +30,6 @@ namespace XMLWizard
         private string _name;
         private string _serverurl;
         private string _username;
-        private string _password;
         //
 
         public string servicename
@@ -180,15 +179,6 @@ namespace XMLWizard
                 OnPropertyChanged("username");
             }
         }
-        public string password
-        {
-            get { return _password; }
-            set
-            {
-                _password = value;
-                OnPropertyChanged("password");
-            }
-        }
 
         private class ProjectClass
         {
@@ -204,7 +194,6 @@ namespace XMLWizard
             public string Name { get; set; }
             public string ServerURL { get; set; }
             public string Username { get; set; }
-            public string Password { get; set; }
         }
         private List<ProjectClass> ProjectList = new List<ProjectClass>();
 
@@ -251,7 +240,6 @@ namespace XMLWizard
             name = ProjectList[ProjectID].Name;
             serverurl = ProjectList[ProjectID].ServerURL;
             username = ProjectList[ProjectID].Username;
-            txtPassword.Password = password = ProjectList[ProjectID].Password;
 
             grpTFS.IsEnabled = (type == null || type.Tag.ToString() == "local") ? false : true;
         }
@@ -313,7 +301,6 @@ namespace XMLWizard
 
                     XMLText += tab + tab + tab + tab + "<networkcredential>" + line;
                     XMLText += tab + tab + tab + tab + tab + "<username>" + p.Username + "</username>" + line;
-                    XMLText += tab + tab + tab + tab + tab + "<password>" + p.Password + "</password>" + line;
                     XMLText += tab + tab + tab + tab + "</networkcredential>" + line;
                     XMLText += tab + tab + tab + "</tfvc>" + line;
                 }
@@ -363,8 +350,6 @@ namespace XMLWizard
                     serverurl = ProjectList[ProjectID].ServerURL = XMLWizard.GetXmlElements("/configurations/projects/project[@nId='" + i + "']/tfvc/serverurl");
                     name = ProjectList[ProjectID].Name = XMLWizard.GetXmlElements("/configurations/projects/project[@nId='" + i + "']/tfvc/name");
                     username = ProjectList[ProjectID].Username = XMLWizard.GetXmlElements("/configurations/projects/project[@nId='" + i + "']/tfvc/networkcredential/username");
-                    password = ProjectList[ProjectID].Password = XMLWizard.GetXmlElements("/configurations/projects/project[@nId='" + i + "']/tfvc/networkcredential/password");
-                    txtPassword.Password = password;
                     
                     // ComboBox - Projects:
                     foreach (ComboBoxItem c in cboProjectID.Items)
@@ -419,7 +404,6 @@ namespace XMLWizard
             ProjectList[ProjectID].Name = name;
             ProjectList[ProjectID].ServerURL = serverurl;
             ProjectList[ProjectID].Username = username;
-            ProjectList[ProjectID].Password = password = txtPassword.Password;
         }
     }
 }

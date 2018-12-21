@@ -21,8 +21,7 @@
 				<history>true</history>
 				<serverurl>https://mycompany.visualstudio.com</serverurl>
 				<networkcredential>
-					<username>themrl_15@hotmail.com</username>
-					<password>Xcvxcv@330722</password>
+					<username>tfsprojectmember@outlook.com</username>
 				</networkcredential>
 			</tfvc>
 		</project>

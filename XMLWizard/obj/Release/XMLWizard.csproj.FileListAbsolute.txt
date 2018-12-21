@@ -14,3 +14,20 @@ c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Rel
 c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.exe
 c:\users\mlima\documents\visual studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.pdb
 C:\Users\mlima\Documents\Visual Studio 2017\Projects\XMLWizard\XMLWizard\obj\Release\XMLWizard.csprojResolveAssemblyReference.cache
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\bin\Release\XMLWizard.exe.config
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\bin\Release\XMLWizard.exe
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\bin\Release\XMLWizard.pdb
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\bin\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\MainWindow.g.cs
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\App.g.cs
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard_MarkupCompile.cache
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard_MarkupCompile.lref
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\MainWindow.baml
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard.g.resources
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard.Properties.Resources.resources
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard.csproj.GenerateResource.cache
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard.csproj.CoreCompileInputs.cache
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard.csproj.CopyComplete
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard.exe
+C:\Users\mlima\source\repos\mlimaalves\DevDocs_XMLWizard\XMLWizard\obj\Release\XMLWizard.pdb
