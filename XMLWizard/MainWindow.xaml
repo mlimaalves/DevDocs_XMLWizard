@@ -46,7 +46,7 @@
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
 
-                    <DockPanel Tag="Project ID" 
+                    <DockPanel Tag="Project ID"
                                ToolTip="Project attribute. nId goes from 1 to 5 (one nId for each project)"
                                LastChildFill="True" Grid.Row="0" Grid.Column="1" Margin="0,5,0,20">
                         <Label Name="lblProjectID"
